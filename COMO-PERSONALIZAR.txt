@@ -1,0 +1,35 @@
+NUESTRA HISTORIA
+
+El botón «Personalizar» y la edición de fotos desde la página se quitaron.
+Para cambiar nombres, fecha, carta, música, fotos o sus textos, edita el
+código en nuestra-historia.html con Visual Studio Code.
+
+CONFIGURAR LOS DATOS Y LAS FOTOS
+
+Busca «const CONFIG» en nuestra-historia.html. Cada campo tiene un comentario
+que explica para qué sirve:
+
+- name1 y name2: sus nombres.
+- startDate: fecha de inicio con formato AAAA-MM-DD (por ejemplo, 2024-06-15).
+- letter: texto de la carta. Usa \n\n para separar párrafos; vacío muestra la
+  carta original.
+- musicTitle y musicUrl: título y ruta/URL directa del archivo de audio.
+- photos: cuatro fotos, en orden: portada y las tres fotos de la galería.
+- photoCaptions: texto que aparece debajo de cada foto.
+
+Para añadir fotos, coloca los archivos en una carpeta junto al HTML y escribe
+sus rutas relativas en photos, por ejemplo:
+photos: ["fotos/portada.jpg", "fotos/viaje.jpg", "fotos/cena.jpg", "fotos/playa.jpg"]
+También puedes usar una URL de imagen o una imagen en formato data:image/...
+Si compartes el HTML con rutas relativas, comparte también la carpeta de fotos
+y conserva la misma estructura de carpetas. Las fotos ya no se cambian desde
+la página: modifica CONFIG.photos en el código.
+
+Para la música puedes colocar un MP3 junto al HTML y usar
+musicUrl: "cancion.mp3", o escribir una URL directa HTTPS a un archivo de
+audio. Los enlaces a páginas de YouTube o Spotify no son archivos de audio.
+Si musicUrl queda vacío, se reproduce el piano instrumental incluido.
+
+Los textos de la lista de deseos, los vales y los planes de la ruleta se
+editan en sus arreglos dentro del código HTML. El botón «Guardar mi versión
+en HTML» conserva también el progreso de las listas y vales al exportar.
